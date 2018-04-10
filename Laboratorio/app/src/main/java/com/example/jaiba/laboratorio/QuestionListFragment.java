@@ -74,13 +74,13 @@ public class QuestionListFragment extends Fragment {
         View vista = inflater.inflate(R.layout.fragment_question_list,container,false);
         recycler = (RecyclerView) vista.findViewById(R.id.recyclerId2);
         recycler.setLayoutManager(new LinearLayoutManager(getContext()));
-
+        /*
         AppDataBase db = Room.databaseBuilder(getContext(), AppDataBase.class, "database-name").allowMainThreadQueries().fallbackToDestructiveMigration().build();
         List<Question> ListQuestion = db.questionDao().getAllQuestion();
 
         RecyclerView.Adapter adapter = new AdapterDatos2(ListQuestion);
         recycler.setAdapter(adapter);
-
+        */
         return vista;
     }
 
